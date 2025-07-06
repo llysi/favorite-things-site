@@ -1,2 +1,2 @@
-# favorite-things-site
-HTML website practice 2
+# html-websites
+various pure html websites for practice!
