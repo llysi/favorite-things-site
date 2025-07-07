@@ -7,15 +7,19 @@
 </head>
 <body>
     <h1>Puppy Adoption Application Form</h1>
+    
     <form action="/submit_adoption" method="POST">
+         <!-- Name Field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br><br>
 
+        <!-- Email Field -->
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required>
         <br><br>
 
+        <!-- Puppy Preference Fieldset -->
         <fieldset>
             <legend>Puppy Preference:</legend>
 
@@ -33,11 +37,13 @@
         </fieldset>
         <br><br>
 
+        <!-- Why Do You Want to Adopt? Field -->
         <label for="reason">Why do you want to adopt a puppy?</label>
         <br>
         <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
         <br><br>
 
+        <!-- Experience with dogs Checkbox -->
         <label for="experience">Do you have any experience with dogs? </label>
         <input type="checkbox" id="experience" name="experience" value="yes">
         <br><br>
