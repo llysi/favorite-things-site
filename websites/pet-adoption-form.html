@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Adoption Form</title>
+    <title>Puppy Adoption Form</title>
 </head>
 <body>
-    <h1>Pet Adoption Application Form</h1>
-    <form action="/submit_adoption"></form>
+    <h1>Puppy Adoption Application Form</h1>
+    <form action="/submit_adoption" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+
+        <fieldset>
+            <legend>Puppy Preference:</legend>
+
+            <input type="radio" id="golden" name="pet" value="golden" required>
+            <label for="golden">Golden Retriever</label>
+            <br>
+
+            <input type="radio" id="german" name="pet" value="german" required>
+            <label for="german">German Shepard</label>
+            <br>
+
+            <input type="radio" id="labrador" name="pet" value="labrador" required>
+            <label for="labrador">Black Labrador</label>
+            <br>
+        </fieldset>
+        <br><br>
+
+        <label for="reason">Why do you want to adopt a puppy?</label>
+        <br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <label for="experience">Do you have any experience with dogs? </label>
+        <input type="checkbox" id="experience" name="experience" value="yes">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
